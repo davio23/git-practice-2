@@ -1,1 +1,20 @@
-
+body {
+    background: green;
+    font-size: 18px;
+}
+.container {
+    max-width: 500px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+	font-size: 26px;
+	}
+.big-text{ font-size: 22px;
