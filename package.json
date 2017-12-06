@@ -2,19 +2,9 @@
   "name": "git-practice-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "npm run test:html",
-    "test:html": "glob-run nu-html-checker *.html",
-   
-   "build": "npm run build:sass && npm run build:autoprefixer && npm run test",	  
-   "build:sass": "sass --sourcemap=none --update sass:css",
-   "build:autoprefixer": "autoprefixer-cli css/style.css",
-    
-   "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" ",	  
-   "watch:sass": "sass --watch sass:css",
-   "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,10 +14,15 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": "https://github.com/davio23/git-practice-2/issues"
+    "url": "https://github.com/davio23/git-practice-2/issues"
   },
   "homepage": "https://github.com/davio23/git-practice-2#readme",
   "dependencies": {
-    "browser-sync": "^2.18.13"
+    "browser-sync": "^2.18.13",
+    "glob-run": "^0.1.6",
+    "onchange": "^3.2.1"
+  },
+  "devDependencies": {
+    "package.json": "^2.0.1"
   }
 }
